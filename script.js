@@ -1,8 +1,8 @@
  /*Nome copiado do html anterior*/
  var paragrafo = document.querySelector("#name");
  paragrafo.textContent =  localStorage.getItem('valueText');
- var banca = document.querySelector("#bank");
- banca.textContent =  localStorage.getItem('valueNumber');
+ var bank = document.querySelector("#bank");
+ bank.textContent =  localStorage.getItem('valueNumber');
 
  
  var sorteio=document.getElementById("sorteio").addEventListener("click",()=>{ 
