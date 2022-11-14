@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados da Sorte</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <header>
+        <form>
+        <h3>Entrar na Conta:</h3>
+        <input type="text" placeholder="Nome" value="" id="name">
+        <input type="number" placeholder="Valor da Banca" id="bank">
+        <input type="button" id="inputbtn" value="Entrar" class="button"/>
+    </form>
+</header>
+<footer>
+    <span>Copyright &copy; | Danilo Braga</span>
+</footer>
+<script>
+    var btn = document.querySelector("#inputbtn");
+    btn.addEventListener("click", function(){
+        var text = document.querySelector("#name").value;
+        localStorage.setItem('valueText', text);
+        var number = document.querySelector("#bank").value;
+        localStorage.setItem('valueNumber', number);
+        window.open("./main.html", "_parent");
+    })
+</script>
+
+</body>
+</html>

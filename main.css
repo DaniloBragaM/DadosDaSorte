@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(11, 133, 182);
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#info{
+    display: flex; 
+    padding: 10px 0 10px 0 ;   
+}
+#info button{
+    display:flex;position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px; width: 100px; font-size: 15px; font-family: 'Courier New', Courier, monospace; cursor: pointer;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#cliente{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 100%; 
+    padding-top: 0px; 
+    text-transform: uppercase;          
+}
+#escolhalado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    flex-grow: 1;
+    padding-top: 2rem; 
+}
+#escolhalado img{
+   width: 50px;
+   padding-bottom: 5px;
+   border-radius: 5px; 
+}
+article{
+    padding-bottom: 0px;
+    padding: 0 50% 0 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+article img{
+    width: 250px;
+    height: 250px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;        
+}
+
+div{
+    display: grid;
+
+}
+#sorteio, #aposta{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background: rgb(3, 190, 50);
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: transform 5s;
+}
+#sorteio, #aposta:hover{
+    background: green;
+}
+#sorteio, #aposta:active{
+    background: red;
+    
+}
+
+input{
+    width: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    
+
+}
+footer{
+    font-style:italic;
+    font-size: 20px;
+    padding: 18rem 0 0 30%; 
+}
+/*stream para celular*/
+@media only screen and (max-width: 500px)  {
+footer{      
+padding: 20% 10% 0 10%; 
+font-size: 15px;
+}
+h3{
+ font-size: 20px;
+ }
+}
